@@ -41,6 +41,8 @@ static URBNEnvironmentController *_instance = nil;
     return _instance;
 }
 
+#pragma mark - Setup
+
 - (instancetype)init
 {
     self = [super init];
@@ -50,72 +52,6 @@ static URBNEnvironmentController *_instance = nil;
         [self loadCurrentEnvironemnt];
     }
     return self;
-}
-
-- (void)loadEnvironemntsFromPlist
-{
-
-    NSURL *plistURL = [[NSBundle mainBundle] URLForResource:URBNEnvironemntsPlistName
-                                              withExtension:URBNEnvironemntsPlistExtension];
-
-    if (!plistURL)
-        return;
-
-    NSArray *environmentDictionaries = [NSArray arrayWithContentsOfURL:plistURL];
-
-    if (![environmentDictionaries isKindOfClass:[NSArray class]])
-        return;
-
-    NSMutableArray *environments = [NSMutableArray array];
-
-    [environmentDictionaries enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-    
-        if(![obj isKindOfClass:[NSDictionary class]])
-            return;
-        
-        NSError* __autoreleasing error;
-        URBNEnvironment* environment = [URBNEnvironment modelWithDictionary:obj error:&error];
-        
-        if(environment){
-            
-            [environments addObject:environment];
-        }
-    }];
-
-    self.availableEnvironments = environments;
-}
-
-- (NSString *)savedEnvironmentName
-{
-    return [[NSUserDefaults standardUserDefaults] objectForKey:URBNCurrentEnvironmentUserDefaultsKey];
-}
-
-- (void)saveEnvironmentName:(NSString *)name
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:name
-                 forKey:URBNCurrentEnvironmentUserDefaultsKey];
-    [defaults synchronize];
-}
-
-- (URBNEnvironment *)environmentWithName:(NSString *)name
-{
-
-    NSUInteger index = [[self availableEnvironments] indexOfObjectPassingTest:^BOOL(URBNEnvironment *obj, NSUInteger idx, BOOL *stop) {
-        
-        if([[obj name] isEqualToString:name]){
-            
-            *stop = YES;
-            return YES;
-        
-        }
-        return NO;
-    }];
-
-    if (index == NSNotFound)
-        return nil;
-
-    return [self.availableEnvironments objectAtIndex:index];
 }
 
 - (void)loadCurrentEnvironemnt
@@ -137,6 +73,78 @@ static URBNEnvironmentController *_instance = nil;
 
     self.currentEnvironment = environment;
 }
+
+- (void)loadEnvironemntsFromPlist
+{
+
+    NSURL *plistURL = [[NSBundle mainBundle] URLForResource:URBNEnvironemntsPlistName
+                                              withExtension:URBNEnvironemntsPlistExtension];
+
+    if (!plistURL)
+        return;
+
+    NSArray *environmentDictionaries = [NSArray arrayWithContentsOfURL:plistURL];
+
+    if (![environmentDictionaries isKindOfClass:[NSArray class]])
+        return;
+
+    NSMutableArray *environments = [NSMutableArray array];
+
+    [environmentDictionaries enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+        
+        if(![obj isKindOfClass:[NSDictionary class]])
+            return;
+        
+        NSError* __autoreleasing error;
+        URBNEnvironment* environment = [URBNEnvironment modelWithDictionary:obj error:&error];
+        
+        if(environment){
+            
+            [environments addObject:environment];
+        }
+    }];
+
+    self.availableEnvironments = environments;
+}
+
+#pragma mark - Utility Methods
+
+- (URBNEnvironment *)environmentWithName:(NSString *)name
+{
+
+    NSUInteger index = [[self availableEnvironments] indexOfObjectPassingTest:^BOOL(URBNEnvironment *obj, NSUInteger idx, BOOL *stop) {
+        
+        if([[obj name] isEqualToString:name]){
+            
+            *stop = YES;
+            return YES;
+            
+        }
+        return NO;
+    }];
+
+    if (index == NSNotFound)
+        return nil;
+
+    return [self.availableEnvironments objectAtIndex:index];
+}
+
+#pragma mark - Saved Environment
+
+- (NSString *)savedEnvironmentName
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:URBNCurrentEnvironmentUserDefaultsKey];
+}
+
+- (void)saveEnvironmentName:(NSString *)name
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:name
+                 forKey:URBNCurrentEnvironmentUserDefaultsKey];
+    [defaults synchronize];
+}
+
+#pragma mark - Switch Environments
 
 - (void)changeToEnvironment:(URBNEnvironment *)newEnvironment
 {

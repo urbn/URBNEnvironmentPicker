@@ -2,7 +2,8 @@
 #import "URBNEnvironmentPickerTableViewController.h"
 #import "URBNEnvironmentController.h"
 #import "URBNEnvironment.h"
-#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <libextobjc/extobjc.h>
 
 @interface URBNEnvironmentPickerTableViewController ()
 
@@ -120,38 +121,32 @@
     [self.tableView reloadData];
 }
 
-#pragma mark - Actions
+#pragma mark - Alerts
 
-- (IBAction)save:(id)sender
+- (void)showConfirmationAlert
 {
 
     UIAlertView *areYouSureAlert = [UIAlertView bk_alertViewWithTitle:@"Switching Environments"
                                                               message:@"Tap \"Switch\" to change the current environment "];
 
+    @weakify(self);
+
     [areYouSureAlert bk_addButtonWithTitle:@"Switch"
                                    handler:^{
+                                       
+                                       @strongify(self);
                                        
                                        NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
                                        URBNEnvironment* newEnvironment = [self environments][selectedIndexPath.row];
                                        
                                        if([newEnvironment isEqual:[self currentEnvironment]]){
                                            
-                                           [self dismissViewControllerAnimated:YES completion: ^{
-                                               
-                                               UIAlertView *alert = [UIAlertView bk_alertViewWithTitle:@"Environment Unchanged"
-                                                                                               message:@"The new environment is the same as the old environment"];
-                                               
-                                               [alert bk_setCancelBlock:^{    
-                                                   //nonop
-                                               }];
-                                               
-                                               [alert show];
-                                               
-                                           }];
+                                           [self showEnvironmentUnchangedChangedAlert];
                                            
+                                       }else{
+                                           
+                                           [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
                                        }
-                                       
-                                       [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
                                    }];
 
     [areYouSureAlert bk_setCancelButtonWithTitle:@"Never Mind"
@@ -160,6 +155,30 @@
                                                  }];
 
     [areYouSureAlert show];
+}
+
+- (void)showEnvironmentUnchangedChangedAlert
+{
+
+    [self dismissViewControllerAnimated:YES
+                             completion:^{
+                                 
+                                 UIAlertView *alert = [UIAlertView bk_alertViewWithTitle:@"Environment Unchanged"
+                                                                                 message:@"The new environment is the same as the old environment"];
+                                 
+                                 [alert bk_setCancelBlock:^{
+                                     //nonop
+                                 }];
+                                 
+                                 [alert show];
+                             }];
+}
+
+#pragma mark - Actions
+
+- (IBAction)save:(id)sender
+{
+    [self showConfirmationAlert];
 }
 
 - (IBAction)cancel:(id)sender
