@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files  = "URBNEnvironmentPicker/*.{h,m}"
-  s.frameworks = 'UIKit', 'Foundation'
+  s.frameworks = 'UIKit','Foundation'
+  s.dependencies = 'BlocksKit','Mantle','libextobjc'
 
 end
