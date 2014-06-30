@@ -145,7 +145,12 @@
                                            
                                        }else{
                                            
-                                           [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
+                                           [self dismissViewControllerAnimated:YES completion:^{
+                                               
+                                               [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
+
+                                           }];
+
                                        }
                                    }];
 

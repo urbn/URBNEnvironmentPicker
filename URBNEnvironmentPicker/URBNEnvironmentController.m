@@ -168,7 +168,7 @@ static URBNEnvironmentController *_instance = nil;
     self.currentEnvironment = newEnvironment;
     [self saveEnvironmentName:newEnvironment.name];
 
-    [[NSNotificationCenter defaultCenter] postNotificationName:URBNEnvironmentWillChangeNotification
+    [[NSNotificationCenter defaultCenter] postNotificationName:URBNEnvironmentDidChangeNotification
                                                         object:self
                                                       userInfo:
                                                           @{
