@@ -79,14 +79,14 @@ static URBNEnvironmentController *_instance = nil;
         return;
     }
 
+
     NSMutableArray *environments = [NSMutableArray array];
     [environmentDictionaries enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
         if (![obj isKindOfClass:[NSDictionary class]]) {
             return;
         }
-        
-        NSError* __autoreleasing error;
-        URBNEnvironment* environment = [URBNEnvironment modelWithDictionary:obj error:&error];
+
+        URBNEnvironment* environment = [[URBNEnvironment alloc] initWithDictionary:obj];
         
         if (environment) {
             [environments addObject:environment];

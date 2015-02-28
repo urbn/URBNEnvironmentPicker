@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 Urban Outfitters. All rights reserved.
 //
 
-#import <Mantle/Mantle.h>
-
-@interface URBNEnvironment : MTLModel
+@interface URBNEnvironment : NSObject
 
 #pragma mark - Environment Properties
 /**
@@ -25,6 +23,17 @@
  *  A (short) description that describes the environment which is suitable for display in the UI.
  */
 @property (nonatomic, retain, readonly) NSString *displayDescription;
+
+#pragma mark - Initalize
+
+/**
+ *  Initalize URBNEnvironment Object
+ *
+ *  @param Environment dictionary in URBNEnvironments.plist
+ *
+ *  @return The instancetype
+ */
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 #pragma mark - Get Settings
 

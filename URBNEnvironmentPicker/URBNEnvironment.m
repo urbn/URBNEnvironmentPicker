@@ -8,6 +8,10 @@
 
 #import "URBNEnvironment.h"
 
+NSString *const URBNEnvironmentNameKey = @"name";
+NSString *const URBNEnvironmentDisplayNameKey = @"displayName";
+NSString *const URBNEnvironmentDisplayDescriptionKey = @"displayDescription";
+
 @interface URBNEnvironment ()
 
 @property (nonatomic, retain, readwrite) NSString *name;
@@ -19,48 +23,53 @@
 
 @implementation URBNEnvironment
 
-- (id)objectForKey:(NSString *)key
-{
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    if (self) {
+        self.name = [dictionary objectForKey:URBNEnvironmentNameKey];
+        self.displayName = [dictionary objectForKey:URBNEnvironmentDisplayNameKey];
+        self.displayDescription = [dictionary objectForKey:URBNEnvironmentDisplayDescriptionKey];
+    }
+    
+    return self;
+}
+
+- (id)objectForKey:(NSString *)key {
     return [self.settings objectForKey:key];
 }
 
-- (NSString *)stringForKey:(NSString *)key
-{
+- (NSString *)stringForKey:(NSString *)key {
     return [self objectForKey:key];
 }
 
-- (NSURL *)URLForKey:(NSString *)key
-{
+- (NSURL *)URLForKey:(NSString *)key {
     NSString *string = [self objectForKey:key];
 
-    if (!string)
+    if (!string) {
         return nil;
+    }
 
     return [NSURL URLWithString:string];
 }
 
-- (NSInteger)integerForKey:(NSString *)key
-{
+- (NSInteger)integerForKey:(NSString *)key {
     return [[self objectForKey:key] integerValue];
 }
 
-- (NSTimeInterval)intervalForKey:(NSString *)key
-{
+- (NSTimeInterval)intervalForKey:(NSString *)key {
     return [[self objectForKey:key] doubleValue];
 }
 
-- (double)doubleForKey:(NSString *)key
-{
+- (double)doubleForKey:(NSString *)key {
     return [[self objectForKey:key] doubleValue];
 }
 
-- (BOOL)boolForKey:(NSString *)key
-{
+- (BOOL)boolForKey:(NSString *)key {
     return [[self objectForKey:key] boolValue];
 }
 
-- (NSArray *)arrayForKey:(NSString *)key
-{
+- (NSArray *)arrayForKey:(NSString *)key {
     return [self objectForKey:key];
 }
 
