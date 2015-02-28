@@ -96,33 +96,36 @@
 #pragma mark - Alerts
 
 - (void)showConfirmationAlert {
-    UIAlertView *areYouSureAlert = [[UIAlertView alloc] initWithTitle:@"Switching Environments" message:NSLocalizedString(@"Tap \"Switch\" to change the current environment ", nil) delegate:self cancelButtonTitle:@"Never Mind" otherButtonTitles:nil];
+    UIAlertView *areYouSureAlert = [[UIAlertView alloc] initWithTitle:@"Switching Environments" message:NSLocalizedString(@"Tap \"Switch\" to change the current environment ", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"Never Mind",nil) otherButtonTitles:NSLocalizedString(@"Switch", nil), nil];
     [areYouSureAlert show];
 }
 
 - (void)showEnvironmentUnchangedChangedAlert {
-    [self dismissViewControllerAnimated:YES completion:^{
-     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Environment Unchanged" message:NSLocalizedString(@"The new environment is the same as the old environment", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Environment Unchanged" message:NSLocalizedString(@"The new environment is the same as the old environment", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
     [alert show];
-    }];
 }
 
 #pragma mark -UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    URBNEnvironment* newEnvironment = [self environments][selectedIndexPath.row];
-    
-    if ([newEnvironment isEqual:[self currentEnvironment]]) {
-        [self showEnvironmentUnchangedChangedAlert];
-    } else{
-        [self dismissViewControllerAnimated:YES completion:^{
-            [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
-        }];
+    if (buttonIndex == 0) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else {
+        NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+        URBNEnvironment* newEnvironment = [self environments][selectedIndexPath.row];
+
+        if ([newEnvironment isEqual:[self currentEnvironment]]) {
+            [self showEnvironmentUnchangedChangedAlert];
+        } else{
+            [self dismissViewControllerAnimated:YES completion:^{
+                [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
+            }];
+        }
     }
 }
 
 - (void)alertViewCancel:(UIAlertView *)alertView {
-    
+    NSLog(@"alertViewCancel");
 }
 
 #pragma mark - Actions
