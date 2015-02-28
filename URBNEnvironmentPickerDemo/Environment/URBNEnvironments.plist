@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Production</string>
+		<key>displayName</key>
+		<string>Production</string>
+		<key>displayDescription</key>
+		<string>Uses prod.com</string>
+		<key>settings</key>
+		<dict>
+			<key>APIKey1</key>
+			<string>1234567</string>
+			<key>APIKey2</key>
+			<string>7654321</string>
+			<key>CocoaLumberJackFileLoggingLevel</key>
+			<string>00011</string>
+			<key>CocoaLumberJackXcodeLoggingLevel</key>
+			<string>00011</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Staging</string>
+		<key>displayName</key>
+		<string>Staging</string>
+		<key>displayDescription</key>
+		<string>Uses staging.com</string>
+		<key>settings</key>
+		<dict>
+			<key>APIKey1</key>
+			<string>2345678</string>
+			<key>APIKey2</key>
+			<string>8765432</string>
+			<key>CocoaLumberJackFileLoggingLevel</key>
+			<string>00001</string>
+			<key>CocoaLumberJackXcodeLoggingLevel</key>
+			<string>00001</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dev1</string>
+		<key>displayName</key>
+		<string>Development 1</string>
+		<key>displayDescription</key>
+		<string>Uses dev1.com</string>
+		<key>settings</key>
+		<dict>
+			<key>APIKey1</key>
+			<string>3456789</string>
+			<key>APIKey2</key>
+			<string>9876543</string>
+			<key>CocoaLumberJackFileLoggingLevel</key>
+			<string>00001</string>
+			<key>CocoaLumberJackXcodeLoggingLevel</key>
+			<string>00001</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dev2</string>
+		<key>displayName</key>
+		<string>Development 2</string>
+		<key>displayDescription</key>
+		<string>Uses dev2.com</string>
+		<key>settings</key>
+		<dict>
+			<key>APIKey1</key>
+			<string>4567890</string>
+			<key>APIKey2</key>
+			<string>0987654</string>
+			<key>CocoaLumberJackFileLoggingLevel</key>
+			<string>00001</string>
+			<key>CocoaLumberJackXcodeLoggingLevel</key>
+			<string>00001</string>
+		</dict>
+	</dict>
+</array>
+</plist>
