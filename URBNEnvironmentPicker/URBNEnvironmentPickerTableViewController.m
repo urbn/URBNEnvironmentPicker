@@ -2,10 +2,8 @@
 #import "URBNEnvironmentPickerTableViewController.h"
 #import "URBNEnvironmentController.h"
 #import "URBNEnvironment.h"
-#import <BlocksKit/BlocksKit+UIKit.h>
-#import <libextobjc/extobjc.h>
 
-@interface URBNEnvironmentPickerTableViewController ()
+@interface URBNEnvironmentPickerTableViewController () <UIAlertViewDelegate>
 
 @property (nonatomic, strong) URBNEnvironment *selectedEnvironment;
 
@@ -15,55 +13,37 @@
 
 #pragma mark - UIViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.selectedEnvironment = [self currentEnvironment];
-
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
-                                                             style:UIBarButtonItemStyleBordered
-                                                            target:self
-                                                            action:@selector(cancel:)];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancel:)];
 
     self.navigationItem.leftBarButtonItem = item;
-
-    item = [[UIBarButtonItem alloc] initWithTitle:@"Save"
-                                            style:UIBarButtonItemStyleBordered
-                                           target:self
-                                           action:@selector(save:)];
-
+    item = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleBordered target:self action:@selector(save:)];
     self.navigationItem.rightBarButtonItem = item;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
     NSIndexPath *indexPath = [self indexPathOfEnvironment:[self currentEnvironment]];
-    [self.tableView selectRowAtIndexPath:indexPath
-                                animated:NO
-                          scrollPosition:UITableViewScrollPositionNone];
+    [self.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 #pragma mark - Utility Methods
-
-- (NSArray *)environments
-{
+- (NSArray *)environments {
     return [[URBNEnvironmentController sharedInstance] availableEnvironments];
 }
 
-- (URBNEnvironment *)currentEnvironment
-{
+- (URBNEnvironment *)currentEnvironment {
     return [[URBNEnvironmentController sharedInstance] currentEnvironment];
 }
 
-- (NSIndexPath *)indexPathOfEnvironment:(URBNEnvironment *)environment
-{
+- (NSIndexPath *)indexPathOfEnvironment:(URBNEnvironment *)environment {
     NSUInteger index = [[self environments] indexOfObjectPassingTest:^BOOL(URBNEnvironment *obj, NSUInteger idx, BOOL *stop) {
         
-        if([environment isEqual:obj]){
-            
+        if ([environment isEqual:obj]) {
             *stop = YES;
             return YES;
         }
@@ -71,30 +51,24 @@
         return NO;
     }];
 
-    if (index == NSNotFound)
+    if (index == NSNotFound) {
         return nil;
+    }
 
-    return [NSIndexPath indexPathForRow:index
-                              inSection:0];
+    return [NSIndexPath indexPathForRow:index inSection:0];
 }
 
 #pragma mark - UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[self environments] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
     if (!cell) {
-
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
     URBNEnvironment *environment = [self environments][indexPath.row];
@@ -103,10 +77,9 @@
 
     if ([environment isEqual:[self selectedEnvironment]]) {
         [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
-        [self.tableView selectRowAtIndexPath:indexPath
-                                    animated:NO
-                              scrollPosition:UITableViewScrollPositionNone];
-    } else {
+        [self.tableView selectRowAtIndexPath:indexPath  animated:NO scrollPosition:UITableViewScrollPositionNone];
+    }
+    else {
         [cell setAccessoryType:UITableViewCellAccessoryNone];
     }
 
@@ -115,82 +88,50 @@
 
 #pragma mark - UITableViewDelegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedEnvironment = [self environments][indexPath.row];
     [self.tableView reloadData];
 }
 
 #pragma mark - Alerts
 
-- (void)showConfirmationAlert
-{
-
-    UIAlertView *areYouSureAlert = [UIAlertView bk_alertViewWithTitle:@"Switching Environments"
-                                                              message:@"Tap \"Switch\" to change the current environment "];
-
-    @weakify(self);
-
-    [areYouSureAlert bk_addButtonWithTitle:@"Switch"
-                                   handler:^{
-                                       
-                                       @strongify(self);
-                                       
-                                       NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-                                       URBNEnvironment* newEnvironment = [self environments][selectedIndexPath.row];
-                                       
-                                       if([newEnvironment isEqual:[self currentEnvironment]]){
-                                           
-                                           [self showEnvironmentUnchangedChangedAlert];
-                                           
-                                       }else{
-                                           
-                                           [self dismissViewControllerAnimated:YES completion:^{
-                                               
-                                               [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
-
-                                           }];
-
-                                       }
-                                   }];
-
-    [areYouSureAlert bk_setCancelButtonWithTitle:@"Never Mind"
-                                         handler:^{
-                                                   //nonop
-                                                 }];
-
+- (void)showConfirmationAlert {
+    UIAlertView *areYouSureAlert = [[UIAlertView alloc] initWithTitle:@"Switching Environments" message:NSLocalizedString(@"Tap \"Switch\" to change the current environment ", nil) delegate:self cancelButtonTitle:@"Never Mind" otherButtonTitles:nil];
     [areYouSureAlert show];
 }
 
-- (void)showEnvironmentUnchangedChangedAlert
-{
+- (void)showEnvironmentUnchangedChangedAlert {
+    [self dismissViewControllerAnimated:YES completion:^{
+     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Environment Unchanged" message:NSLocalizedString(@"The new environment is the same as the old environment", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+    [alert show];
+    }];
+}
 
-    [self dismissViewControllerAnimated:YES
-                             completion:^{
-                                 
-                                 UIAlertView *alert = [UIAlertView bk_alertViewWithTitle:@"Environment Unchanged"
-                                                                                 message:@"The new environment is the same as the old environment"];
-                                 
-                                 [alert bk_setCancelBlock:^{
-                                     //nonop
-                                 }];
-                                 
-                                 [alert show];
-                             }];
+#pragma mark -UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    URBNEnvironment* newEnvironment = [self environments][selectedIndexPath.row];
+    
+    if ([newEnvironment isEqual:[self currentEnvironment]]) {
+        [self showEnvironmentUnchangedChangedAlert];
+    } else{
+        [self dismissViewControllerAnimated:YES completion:^{
+            [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
+        }];
+    }
+}
+
+- (void)alertViewCancel:(UIAlertView *)alertView {
+    
 }
 
 #pragma mark - Actions
-
-- (IBAction)save:(id)sender
-{
+- (IBAction)save:(id)sender {
     [self showConfirmationAlert];
 }
 
-- (IBAction)cancel:(id)sender
-{
-
-    [self dismissViewControllerAnimated:YES
-                             completion:NULL];
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
