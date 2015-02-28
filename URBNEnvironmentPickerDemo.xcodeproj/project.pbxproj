@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		469BC6631AA268F400AD8D80 /* URBNEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 469BC6621AA268F400AD8D80 /* URBNEnvironments.plist */; };
 		76B338D8423C4FCFAD2A6428 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD22752647AE40CC8F687F09 /* libPods.a */; };
 		A2A7E302192E4FCE001D5251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A7E301192E4FCE001D5251 /* Foundation.framework */; };
 		A2A7E304192E4FCE001D5251 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A7E303192E4FCE001D5251 /* CoreGraphics.framework */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		03C790B2013CCCB01768BDF4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		040A6BB3E0FC49D9AA00B27E /* libPods-URBNEnvironmentPickerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPickerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		469BC6621AA268F400AD8D80 /* URBNEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = URBNEnvironments.plist; path = Environment/URBNEnvironments.plist; sourceTree = "<group>"; };
 		6F19C5BAA3C6028CFF5481BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A2A7E2FE192E4FCE001D5251 /* URBNEnvironmentPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNEnvironmentPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A7E301192E4FCE001D5251 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,7 +73,7 @@
 		469BC6611AA268E500AD8D80 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				469BC6621AA268F400AD8D80 /* URBNEnvironments.plist */,
+				A2A7E342192E503A001D5251 /* URBNEnvironments.plist */,
 			);
 			name = Environment;
 			sourceTree = "<group>";
@@ -122,7 +120,6 @@
 				A2A7E313192E4FCE001D5251 /* Main.storyboard */,
 				A2A7E316192E4FCE001D5251 /* URBNViewController.h */,
 				A2A7E317192E4FCE001D5251 /* URBNViewController.m */,
-				A2A7E342192E503A001D5251 /* URBNEnvironments.plist */,
 				A2A7E319192E4FCE001D5251 /* Images.xcassets */,
 				A2A7E308192E4FCE001D5251 /* Supporting Files */,
 			);
@@ -239,7 +236,6 @@
 				A2A7E30C192E4FCE001D5251 /* InfoPlist.strings in Resources */,
 				A2A7E315192E4FCE001D5251 /* Main.storyboard in Resources */,
 				A2A7E343192E503A001D5251 /* URBNEnvironments.plist in Resources */,
-				469BC6631AA268F400AD8D80 /* URBNEnvironments.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
