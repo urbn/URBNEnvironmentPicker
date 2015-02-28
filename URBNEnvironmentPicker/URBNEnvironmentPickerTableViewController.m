@@ -42,7 +42,6 @@
 
 - (NSIndexPath *)indexPathOfEnvironment:(URBNEnvironment *)environment {
     NSUInteger index = [[self environments] indexOfObjectPassingTest:^BOOL(URBNEnvironment *obj, NSUInteger idx, BOOL *stop) {
-        
         if ([environment isEqual:obj]) {
             *stop = YES;
             return YES;
@@ -122,10 +121,6 @@
             }];
         }
     }
-}
-
-- (void)alertViewCancel:(UIAlertView *)alertView {
-    NSLog(@"alertViewCancel");
 }
 
 #pragma mark - Actions
