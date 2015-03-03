@@ -12,17 +12,17 @@
 /**
  *  A name for the environment. This name should be unique for each environemnt you define.
  */
-@property (nonatomic, retain, readonly) NSString *name;
+@property (nonatomic, strong, readonly) NSString *name;
 
 /**
  *  A name for the environment which is suitable for display in the UI.
  */
-@property (nonatomic, retain, readonly) NSString *displayName;
+@property (nonatomic, strong, readonly) NSString *displayName;
 
 /**
  *  A (short) description that describes the environment which is suitable for display in the UI.
  */
-@property (nonatomic, retain, readonly) NSString *displayDescription;
+@property (nonatomic, strong, readonly) NSString *displayDescription;
 
 #pragma mark - Initalize
 

@@ -23,8 +23,8 @@ static URBNEnvironmentController *_instance = nil;
 
 @interface URBNEnvironmentController ()
 
-@property (nonatomic, retain, readwrite) NSArray *availableEnvironments;
-@property (nonatomic, retain, readwrite) URBNEnvironment *currentEnvironment;
+@property (nonatomic, strong, readwrite) NSArray *availableEnvironments;
+@property (nonatomic, strong, readwrite) URBNEnvironment *currentEnvironment;
 
 @end
 

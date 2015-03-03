@@ -28,7 +28,7 @@ extern NSString *const URBNEnvironmentChangeNewEnvironmentKey;
 /**
  *  Get a list of all environments (URBNEnvironment) loaded from the plist (in the same order)
  */
-@property (nonatomic, retain, readonly) NSArray *availableEnvironments;
+@property (nonatomic, strong, readonly) NSArray *availableEnvironments;
 
 /**
  *  The current environment of the app.
@@ -39,7 +39,7 @@ extern NSString *const URBNEnvironmentChangeNewEnvironmentKey;
  *
  *  Otherwise, the current environment can be changed using the changeToEnvironment: method.
  */
-@property (nonatomic, retain, readonly) URBNEnvironment *currentEnvironment;
+@property (nonatomic, strong, readonly) URBNEnvironment *currentEnvironment;
 
 /**
  *  Setting this to YES calls abort() when the environment changes.

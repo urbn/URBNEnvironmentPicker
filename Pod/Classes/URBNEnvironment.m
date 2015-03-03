@@ -8,16 +8,16 @@
 
 #import "URBNEnvironment.h"
 
-NSString *const URBNEnvironmentNameKey = @"name";
-NSString *const URBNEnvironmentDisplayNameKey = @"displayName";
-NSString *const URBNEnvironmentDisplayDescriptionKey = @"displayDescription";
+static NSString *const URBNEnvironmentNameKey = @"name";
+static NSString *const URBNEnvironmentDisplayNameKey = @"displayName";
+static NSString *const URBNEnvironmentDisplayDescriptionKey = @"displayDescription";
 
 @interface URBNEnvironment ()
 
-@property (nonatomic, retain, readwrite) NSString *name;
-@property (nonatomic, retain, readwrite) NSString *displayName;
-@property (nonatomic, retain, readwrite) NSString *displayDescription;
-@property (nonatomic, retain) NSDictionary *settings;
+@property (nonatomic, strong, readwrite) NSString *name;
+@property (nonatomic, strong, readwrite) NSString *displayName;
+@property (nonatomic, strong, readwrite) NSString *displayDescription;
+@property (nonatomic, strong) NSDictionary *settings;
 
 @end
 
