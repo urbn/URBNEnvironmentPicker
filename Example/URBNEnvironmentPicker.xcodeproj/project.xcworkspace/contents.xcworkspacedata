@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:URBNEnvironmentPickerDemo.xcodeproj">
+      location = "self:URBNEnvironmentPicker.xcodeproj">
    </FileRef>
 </Workspace>

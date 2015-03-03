@@ -120,8 +120,7 @@ static URBNEnvironmentController *_instance = nil;
 
 - (void)saveEnvironmentName:(NSString *)name {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:name
-                 forKey:URBNCurrentEnvironmentUserDefaultsKey];
+    [defaults setObject:name forKey:URBNCurrentEnvironmentUserDefaultsKey];
     [defaults synchronize];
 }
 
@@ -142,7 +141,7 @@ static URBNEnvironmentController *_instance = nil;
     self.currentEnvironment = newEnvironment;
     [self saveEnvironmentName:newEnvironment.name];
 
-    [[NSNotificationCenter defaultCenter] postNotificationName:URBNEnvironmentDidChangeNotification object:self userInfo: @{URBNEnvironmentChangeOldEnvironmentKey : oldEnvironment, URBNEnvironmentChangeNewEnvironmentKey : newEnvironment}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:URBNEnvironmentDidChangeNotification object:self userInfo:@{URBNEnvironmentChangeOldEnvironmentKey : oldEnvironment, URBNEnvironmentChangeNewEnvironmentKey : newEnvironment}];
 
     if (self.terminateAppOnEnvironemntChange) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

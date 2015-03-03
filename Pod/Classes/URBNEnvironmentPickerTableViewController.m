@@ -115,7 +115,8 @@
 
         if ([newEnvironment isEqual:[self currentEnvironment]]) {
             [self showEnvironmentUnchangedChangedAlert];
-        } else{
+        }
+        else {
             [self dismissViewControllerAnimated:YES completion:^{
                 [[URBNEnvironmentController sharedInstance] changeToEnvironment:newEnvironment];
             }];

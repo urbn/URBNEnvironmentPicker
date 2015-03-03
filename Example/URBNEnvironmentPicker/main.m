@@ -1,9 +1,9 @@
 //
 //  main.m
-//  URBNEnvironmentPickerDemo
+//  URBNEnvironmentPicker
 //
-//  Created by Corey Floyd on 5/22/14.
-//  Copyright (c) 2014 URBN. All rights reserved.
+//  Created by Dustin Bergman on 03/02/2015.
+//  Copyright (c) 2014 Dustin Bergman. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
