@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "URBNEnvironmentPicker"
   s.version      = "0.1"
-  s.summary      = "The URBNEnvironmentPicker provides both UI and programmatic interfaces to switch environment dependent settings within your app during beta testing."
+  s.summary      = "URBNEnvironmentPicker provides both UI & programmatic interfaces to switch environment settings during beta testing."
   s.homepage  	= 'http://www.urbn.com'
   s.license      = 'MIT'
   s.author    	= 'URBN Application Engineering Team'
