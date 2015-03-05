@@ -11,6 +11,7 @@
 static NSString *const URBNEnvironmentNameKey = @"name";
 static NSString *const URBNEnvironmentDisplayNameKey = @"displayName";
 static NSString *const URBNEnvironmentDisplayDescriptionKey = @"displayDescription";
+static NSString *const URBNEnvironmentSettingsKey = @"settings";
 
 @interface URBNEnvironment ()
 
@@ -30,6 +31,7 @@ static NSString *const URBNEnvironmentDisplayDescriptionKey = @"displayDescripti
         self.name = [dictionary objectForKey:URBNEnvironmentNameKey];
         self.displayName = [dictionary objectForKey:URBNEnvironmentDisplayNameKey];
         self.displayDescription = [dictionary objectForKey:URBNEnvironmentDisplayDescriptionKey];
+        self.settings = [dictionary objectForKey:URBNEnvironmentSettingsKey];
     }
     
     return self;
