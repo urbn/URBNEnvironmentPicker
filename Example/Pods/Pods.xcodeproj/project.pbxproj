@@ -7,327 +7,310 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0520FA48CB77818AFB546854 /* URBNEnvironmentPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C983FB91D25925E85012463A /* URBNEnvironmentPickerTableViewController.h */; };
-		21C41462066FF3F2A2343F00 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B58F06CE2754610D1CFB4BC /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */; };
-		2B9B413AC80307AD8CD85561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFCBB8F10B30526A8583934 /* Foundation.framework */; };
-		2DA188D9D0A9A0DC593D07BE /* URBNEnvironmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F654C215960A8A230007337 /* URBNEnvironmentPicker.m */; };
-		3AD09E8118FB9631628503B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFCBB8F10B30526A8583934 /* Foundation.framework */; };
-		467E9189B8FD7E3C6FCD6066 /* URBNEnvironmentPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4A719B1D6C6C8261C2F35 /* URBNEnvironmentPickerTableViewController.m */; };
-		496A915AF3C02104130721F2 /* URBNEnvironmentPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C983FB91D25925E85012463A /* URBNEnvironmentPickerTableViewController.h */; };
-		546DFE9FD9EA2FEF76C41094 /* URBNEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA6D4C0E6EEBFE0271B258 /* URBNEnvironment.m */; };
-		5477352F838C07A09BDCBAA6 /* URBNEnvironmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F654C215960A8A230007337 /* URBNEnvironmentPicker.m */; };
-		5ED5CD403B9398624CC55496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFCBB8F10B30526A8583934 /* Foundation.framework */; };
-		7169F95B22E6C5523D44C588 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BAE420EBEF998ECE7CC5E9 /* Pods-Tests-dummy.m */; };
-		763B6E8C86FB9914ED3CA772 /* URBNEnvironmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A0CB0058D40FC684F0A21 /* URBNEnvironmentController.m */; };
-		83F5745559B506BF0BB06690 /* URBNEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = E61185C0B270DA38709DC8B1 /* URBNEnvironment.h */; };
-		85395D6E2C2290F50CF1340E /* URBNEnvironmentController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DBFABF78D7448D7062D56E /* URBNEnvironmentController.h */; };
-		96C8495BB5E697352A15B595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFCBB8F10B30526A8583934 /* Foundation.framework */; };
-		9AEE86AE12D0B1867BC95127 /* URBNEnvironmentPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E4A719B1D6C6C8261C2F35 /* URBNEnvironmentPickerTableViewController.m */; };
-		9E6E37C24A0C4C12580AF20F /* Pods-Tests-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1371B60A661E7AE5A1CA0 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */; };
-		B01DA022E88F6E1661068536 /* URBNEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = E61185C0B270DA38709DC8B1 /* URBNEnvironment.h */; };
-		B124F7DFB7C7F7275F3D45C2 /* URBNEnvironmentPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A376712128D35CB6656BE02 /* URBNEnvironmentPicker.h */; };
-		C0932DDA30904D1568C29CD7 /* URBNEnvironmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A0CB0058D40FC684F0A21 /* URBNEnvironmentController.m */; };
-		D5F25B39A95FE02B2A0609E7 /* URBNEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA6D4C0E6EEBFE0271B258 /* URBNEnvironment.m */; };
-		DE958672CF220CCE5C08E59A /* URBNEnvironmentController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DBFABF78D7448D7062D56E /* URBNEnvironmentController.h */; };
-		E14D843CA91236402CE0931F /* URBNEnvironmentPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A376712128D35CB6656BE02 /* URBNEnvironmentPicker.h */; };
-		E273A821557C28B218CCA394 /* Pods-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3107E4EDA2E1A5871CF85E33 /* Pods-URBNEnvironmentPicker-dummy.m */; };
+		16174A3CC14CECDBE6015A62 /* URBNEnvironmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEEBDB2389D0C177693E897 /* URBNEnvironmentController.m */; };
+		177E07936E934D544C45C637 /* URBNEnvironmentPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666C1D1D3E6201B9946C7FE0 /* URBNEnvironmentPickerTableViewController.h */; };
+		1F34728E18F1BD44DF6A4A9F /* URBNEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 947E24E1132EB61920D1528A /* URBNEnvironment.h */; };
+		2A44CA14A7841C4FA80F5953 /* URBNEnvironmentPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C94C14650143AE39ECCF9335 /* URBNEnvironmentPicker.h */; };
+		3C0A2C3EF98B1EB080646465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD426E2687C2B1B628BC55 /* Foundation.framework */; };
+		3D0D3157590E172C51B4101A /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B64255EEB3835874559F00E /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */; };
+		4462713A14D6D2B4678E6B1C /* Pods-Tests-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD3F7DB747556A89A3F3598 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */; };
+		47B738B8B30F53AF0663F7BF /* URBNEnvironmentPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFA5F904DE2B1BD78DBF10 /* URBNEnvironmentPickerTableViewController.m */; };
+		503339DD91FEE9C05F6AC019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD426E2687C2B1B628BC55 /* Foundation.framework */; };
+		50D6CE14420FEB07E3535079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD426E2687C2B1B628BC55 /* Foundation.framework */; };
+		5651A0CA5C8419C7389C43CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD426E2687C2B1B628BC55 /* Foundation.framework */; };
+		56E0E27184A5A25A82C4414C /* URBNEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 947E24E1132EB61920D1528A /* URBNEnvironment.h */; };
+		611E47ED4985EB4022317722 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71C67D7593DB0317D5BF2BB /* Pods-Tests-dummy.m */; };
+		761491502CC23BCB5A2CFFD3 /* URBNEnvironmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 51239F957021B1365E56B6DF /* URBNEnvironmentPicker.m */; };
+		8FF4EFC30C13892E753E2CBB /* URBNEnvironmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEEBDB2389D0C177693E897 /* URBNEnvironmentController.m */; };
+		977B116FEFED5D5D5FDFBD7C /* URBNEnvironmentPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C94C14650143AE39ECCF9335 /* URBNEnvironmentPicker.h */; };
+		99E78B51CD120B7560E2236B /* URBNEnvironmentPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666C1D1D3E6201B9946C7FE0 /* URBNEnvironmentPickerTableViewController.h */; };
+		A17592DD835F6C8C94122B40 /* URBNEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DCB6B7DECFB822D3CE6C2 /* URBNEnvironment.m */; };
+		AA1C465C5071293ACC907341 /* URBNEnvironmentController.h in Headers */ = {isa = PBXBuildFile; fileRef = FEBA0F9D56B006F5B615E3F7 /* URBNEnvironmentController.h */; };
+		AECEA043993F7391797EFBB7 /* URBNEnvironmentController.h in Headers */ = {isa = PBXBuildFile; fileRef = FEBA0F9D56B006F5B615E3F7 /* URBNEnvironmentController.h */; };
+		AF4AEDAC30C1676E1D2E0BD1 /* URBNEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DCB6B7DECFB822D3CE6C2 /* URBNEnvironment.m */; };
+		CCDDB5EA52F8AC9271EF7121 /* Pods-URBNEnvironmentPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7111476D06DB412927C5ACD /* Pods-URBNEnvironmentPicker-dummy.m */; };
+		F36464B872A10E2D5F1FE7C2 /* URBNEnvironmentPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFA5F904DE2B1BD78DBF10 /* URBNEnvironmentPickerTableViewController.m */; };
+		F36D5EFBDAD41F1EBFE8A206 /* URBNEnvironmentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 51239F957021B1365E56B6DF /* URBNEnvironmentPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36EA8CC38EEA7CE38610C171 /* PBXContainerItemProxy */ = {
+		59D952F00A6F06A01E4D836E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 45B5FFFF8D821C7C8EAD8D43 /* Project object */;
+			containerPortal = DEF13BB63AD05380FDB4BDA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D3DDD87744930B6E46E0B161;
+			remoteGlobalIDString = 4B2B992FD152E08B7DFD252D;
 			remoteInfo = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker";
 		};
-		F0497F053FE00F4CC2B7EBBD /* PBXContainerItemProxy */ = {
+		8E72704C598B419A6CABF228 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 45B5FFFF8D821C7C8EAD8D43 /* Project object */;
+			containerPortal = DEF13BB63AD05380FDB4BDA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 332796AA12D44577026A1DB4;
+			remoteGlobalIDString = 98FE7AF769A592E78703869B;
 			remoteInfo = "Pods-Tests-URBNEnvironmentPicker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D7CFB69E663E6ECB12DEBD5 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0E1E6B4B87F060209C7D7B15 /* Pods-Tests-URBNEnvironmentPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-URBNEnvironmentPicker-prefix.pch"; sourceTree = "<group>"; };
-		0EEA6D4C0E6EEBFE0271B258 /* URBNEnvironment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironment.m; sourceTree = "<group>"; };
-		1724D169C8BE4D97FFCC829F /* Pods-URBNEnvironmentPicker-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URBNEnvironmentPicker-environment.h"; sourceTree = "<group>"; };
-		1A376712128D35CB6656BE02 /* URBNEnvironmentPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentPicker.h; sourceTree = "<group>"; };
-		1D7A0CB0058D40FC684F0A21 /* URBNEnvironmentController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentController.m; sourceTree = "<group>"; };
-		2CC6C1CA596A9F955A4FDB4E /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3107E4EDA2E1A5871CF85E33 /* Pods-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
-		3256A027B44EAF3C72C477AD /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		34DBFABF78D7448D7062D56E /* URBNEnvironmentController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentController.h; sourceTree = "<group>"; };
-		3DFCBB8F10B30526A8583934 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		50E4A719B1D6C6C8261C2F35 /* URBNEnvironmentPickerTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentPickerTableViewController.m; sourceTree = "<group>"; };
-		51026CF17016D3E542E2CF65 /* Pods-URBNEnvironmentPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URBNEnvironmentPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		597CCEC756493AE5FFC499BD /* Pods-URBNEnvironmentPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNEnvironmentPicker.release.xcconfig"; sourceTree = "<group>"; };
-		6B1FD2FD9CFE822EA7C6C653 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		759FB9EE7EA9DE20F1B9C39B /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B58F06CE2754610D1CFB4BC /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
-		83DDD380D00CE342AF3DA4B2 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNEnvironmentPicker-Private.xcconfig"; sourceTree = "<group>"; };
-		857BC6FD684EE5250265B167 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig"; sourceTree = "<group>"; };
-		887E2D95326E67B8E18E32ED /* Pods-Tests-URBNEnvironmentPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNEnvironmentPicker.xcconfig"; sourceTree = "<group>"; };
-		8E684D70B6902E9E64B0D5DC /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		8FA1371B60A661E7AE5A1CA0 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
-		90FF58E92D907B05C8911B63 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		966E1304F892B0C97F770854 /* libPods-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F654C215960A8A230007337 /* URBNEnvironmentPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentPicker.m; sourceTree = "<group>"; };
-		A7914E623D78BB4F9E63ADB2 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		A91CA82054974505CB96F6C2 /* libPods-Tests-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B132EBF50D9C49F67B547A3F /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B1BAE420EBEF998ECE7CC5E9 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		C8D5D70001B5AAC0FD24F9B2 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig"; sourceTree = "<group>"; };
-		C983FB91D25925E85012463A /* URBNEnvironmentPickerTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentPickerTableViewController.h; sourceTree = "<group>"; };
-		C98CAF39EFEE7CC7E0964AC8 /* Pods-URBNEnvironmentPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNEnvironmentPicker.debug.xcconfig"; sourceTree = "<group>"; };
-		E61185C0B270DA38709DC8B1 /* URBNEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironment.h; sourceTree = "<group>"; };
-		EF5E6457F8D6DBF38D4626D0 /* Pods-URBNEnvironmentPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URBNEnvironmentPicker-acknowledgements.plist"; sourceTree = "<group>"; };
-		F9337EC9969F4F038928A254 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch"; sourceTree = "<group>"; };
-		FEDC444913A50FBE14B54232 /* Pods-URBNEnvironmentPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBNEnvironmentPicker-resources.sh"; sourceTree = "<group>"; };
+		1EF05FCD1B5D143F9F733E66 /* Pods-URBNEnvironmentPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URBNEnvironmentPicker-resources.sh"; sourceTree = "<group>"; };
+		251144400B827C39FFACCBFF /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig"; sourceTree = "<group>"; };
+		2873D4586742EF3914598253 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3409662767386784116F38A4 /* Pods-URBNEnvironmentPicker-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URBNEnvironmentPicker-environment.h"; sourceTree = "<group>"; };
+		365565109B96575625F6FB5F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D70EFB453702E575B560D88 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch"; sourceTree = "<group>"; };
+		4B26D00B535F6D3FBFEC2D22 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig"; sourceTree = "<group>"; };
+		51239F957021B1365E56B6DF /* URBNEnvironmentPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentPicker.m; sourceTree = "<group>"; };
+		5B64255EEB3835874559F00E /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m"; path = "../Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
+		6600861E9736E78F21A457DD /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		666C1D1D3E6201B9946C7FE0 /* URBNEnvironmentPickerTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentPickerTableViewController.h; sourceTree = "<group>"; };
+		66DD426E2687C2B1B628BC55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67A16F34BBFFCA93A1EC73EF /* libPods-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEEBDB2389D0C177693E897 /* URBNEnvironmentController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentController.m; sourceTree = "<group>"; };
+		6D2DE8EE22003C1B47DEE1BA /* Pods-URBNEnvironmentPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URBNEnvironmentPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D5102870047D7815DD24C9A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		761768060ECDE607316A88EC /* Pods-URBNEnvironmentPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URBNEnvironmentPicker-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FFFA5F904DE2B1BD78DBF10 /* URBNEnvironmentPickerTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentPickerTableViewController.m; sourceTree = "<group>"; };
+		88A40911D249CB9C0B169295 /* Pods-Tests-URBNEnvironmentPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-URBNEnvironmentPicker-prefix.pch"; sourceTree = "<group>"; };
+		947E24E1132EB61920D1528A /* URBNEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironment.h; sourceTree = "<group>"; };
+		9531A9562448148AE6D07475 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		95DFFF4FA6C9CC6614AF4B83 /* Pods-URBNEnvironmentPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNEnvironmentPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6DF31E27491400E99DDA88 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNEnvironmentPicker-Private.xcconfig"; sourceTree = "<group>"; };
+		A71C67D7593DB0317D5BF2BB /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		ACFBADBD2589E9D0530C3986 /* Pods-Tests-URBNEnvironmentPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-URBNEnvironmentPicker.xcconfig"; sourceTree = "<group>"; };
+		BDD3F7DB747556A89A3F3598 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
+		C7111476D06DB412927C5ACD /* Pods-URBNEnvironmentPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URBNEnvironmentPicker-dummy.m"; sourceTree = "<group>"; };
+		C94C14650143AE39ECCF9335 /* URBNEnvironmentPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentPicker.h; sourceTree = "<group>"; };
+		CE60BAD02A13D8AB2F585127 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D73DCB6B7DECFB822D3CE6C2 /* URBNEnvironment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironment.m; sourceTree = "<group>"; };
+		D87C3E597A31FC218F982BB9 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		D9E36E56055F466F38712D7E /* libPods-Tests-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD5D6360DF071DEFE2F788C /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F17B707FE17E55DC59AF0386 /* Pods-URBNEnvironmentPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URBNEnvironmentPicker.release.xcconfig"; sourceTree = "<group>"; };
+		F52AB749B8EA914599ADCFAE /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBA0F9D56B006F5B615E3F7 /* URBNEnvironmentController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URBNEnvironmentController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		518775D8F97A0D89F8792FB4 /* Frameworks */ = {
+		7E4B8131D955248E236E4395 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B9B413AC80307AD8CD85561 /* Foundation.framework in Frameworks */,
+				50D6CE14420FEB07E3535079 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		665FF3344E96D5373CA73C73 /* Frameworks */ = {
+		9D9BB2A78167EA079A9D7F4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED5CD403B9398624CC55496 /* Foundation.framework in Frameworks */,
+				503339DD91FEE9C05F6AC019 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDEBCE17C546BD79FD301F30 /* Frameworks */ = {
+		A42A7DFE5FCFD84DECACACF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD09E8118FB9631628503B9 /* Foundation.framework in Frameworks */,
+				5651A0CA5C8419C7389C43CC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73E8E5E626CF60644811570 /* Frameworks */ = {
+		EE53E0C1CF15D6B717189EA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C8495BB5E697352A15B595 /* Foundation.framework in Frameworks */,
+				3C0A2C3EF98B1EB080646465 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1982646D980C17AFF678DE4A /* Pod */ = {
+		00E7E04646983939564B1C8C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F189D857B26987C13402FEC7 /* Classes */,
+				86D4F60C926FA16BDF8CDA34 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		2BE9D25E36325E695A8C306D /* iOS */ = {
+		11418BF7B6F81429BFC023BE /* URBNEnvironmentPicker */ = {
 			isa = PBXGroup;
 			children = (
-				3DFCBB8F10B30526A8583934 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3ACE88B4D5E3C0562D17A580 /* Pods-URBNEnvironmentPicker */ = {
-			isa = PBXGroup;
-			children = (
-				51026CF17016D3E542E2CF65 /* Pods-URBNEnvironmentPicker-acknowledgements.markdown */,
-				EF5E6457F8D6DBF38D4626D0 /* Pods-URBNEnvironmentPicker-acknowledgements.plist */,
-				3107E4EDA2E1A5871CF85E33 /* Pods-URBNEnvironmentPicker-dummy.m */,
-				1724D169C8BE4D97FFCC829F /* Pods-URBNEnvironmentPicker-environment.h */,
-				FEDC444913A50FBE14B54232 /* Pods-URBNEnvironmentPicker-resources.sh */,
-				C98CAF39EFEE7CC7E0964AC8 /* Pods-URBNEnvironmentPicker.debug.xcconfig */,
-				597CCEC756493AE5FFC499BD /* Pods-URBNEnvironmentPicker.release.xcconfig */,
-			);
-			name = "Pods-URBNEnvironmentPicker";
-			path = "Target Support Files/Pods-URBNEnvironmentPicker";
-			sourceTree = "<group>";
-		};
-		559806659A2B92AEBA653073 /* URBNEnvironmentPicker */ = {
-			isa = PBXGroup;
-			children = (
-				1982646D980C17AFF678DE4A /* Pod */,
-				7A1DBE5596746EA6A40FD3AD /* Support Files */,
+				00E7E04646983939564B1C8C /* Pod */,
+				C5A48FC7F8554B87CD237C99 /* Support Files */,
 			);
 			name = URBNEnvironmentPicker;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		75E9ED2B850B3DC0A1BF18F0 = {
+		366D3E4E206E9DCD55505B99 /* Pods-URBNEnvironmentPicker */ = {
 			isa = PBXGroup;
 			children = (
-				0D7CFB69E663E6ECB12DEBD5 /* Podfile */,
-				7F0A5423997DD50816412CCC /* Development Pods */,
-				AB94AE374577E494BCE7DBCA /* Frameworks */,
-				840E92BA436BFCB1AF6AC29D /* Products */,
-				D79F2293D4207C5A963D4C70 /* Targets Support Files */,
+				6D2DE8EE22003C1B47DEE1BA /* Pods-URBNEnvironmentPicker-acknowledgements.markdown */,
+				761768060ECDE607316A88EC /* Pods-URBNEnvironmentPicker-acknowledgements.plist */,
+				C7111476D06DB412927C5ACD /* Pods-URBNEnvironmentPicker-dummy.m */,
+				3409662767386784116F38A4 /* Pods-URBNEnvironmentPicker-environment.h */,
+				1EF05FCD1B5D143F9F733E66 /* Pods-URBNEnvironmentPicker-resources.sh */,
+				95DFFF4FA6C9CC6614AF4B83 /* Pods-URBNEnvironmentPicker.debug.xcconfig */,
+				F17B707FE17E55DC59AF0386 /* Pods-URBNEnvironmentPicker.release.xcconfig */,
 			);
+			name = "Pods-URBNEnvironmentPicker";
+			path = "Target Support Files/Pods-URBNEnvironmentPicker";
 			sourceTree = "<group>";
 		};
-		7A1DBE5596746EA6A40FD3AD /* Support Files */ = {
+		4CE3A5149F38987302511503 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				887E2D95326E67B8E18E32ED /* Pods-Tests-URBNEnvironmentPicker.xcconfig */,
-				83DDD380D00CE342AF3DA4B2 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */,
-				8FA1371B60A661E7AE5A1CA0 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */,
-				0E1E6B4B87F060209C7D7B15 /* Pods-Tests-URBNEnvironmentPicker-prefix.pch */,
-				C8D5D70001B5AAC0FD24F9B2 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig */,
-				857BC6FD684EE5250265B167 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */,
-				7B58F06CE2754610D1CFB4BC /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */,
-				F9337EC9969F4F038928A254 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-Tests-URBNEnvironmentPicker";
-			sourceTree = "<group>";
-		};
-		7F0A5423997DD50816412CCC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				559806659A2B92AEBA653073 /* URBNEnvironmentPicker */,
+				11418BF7B6F81429BFC023BE /* URBNEnvironmentPicker */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		840E92BA436BFCB1AF6AC29D /* Products */ = {
+		5918E2DA744E717AF24284BF /* Pods-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2CC6C1CA596A9F955A4FDB4E /* libPods-Tests.a */,
-				A91CA82054974505CB96F6C2 /* libPods-Tests-URBNEnvironmentPicker.a */,
-				966E1304F892B0C97F770854 /* libPods-URBNEnvironmentPicker.a */,
-				3256A027B44EAF3C72C477AD /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AB94AE374577E494BCE7DBCA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2BE9D25E36325E695A8C306D /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC56E568EEBEA3432A3C0F11 /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				90FF58E92D907B05C8911B63 /* Pods-Tests-acknowledgements.markdown */,
-				B132EBF50D9C49F67B547A3F /* Pods-Tests-acknowledgements.plist */,
-				B1BAE420EBEF998ECE7CC5E9 /* Pods-Tests-dummy.m */,
-				A7914E623D78BB4F9E63ADB2 /* Pods-Tests-environment.h */,
-				8E684D70B6902E9E64B0D5DC /* Pods-Tests-resources.sh */,
-				759FB9EE7EA9DE20F1B9C39B /* Pods-Tests.debug.xcconfig */,
-				6B1FD2FD9CFE822EA7C6C653 /* Pods-Tests.release.xcconfig */,
+				ECD5D6360DF071DEFE2F788C /* Pods-Tests-acknowledgements.markdown */,
+				CE60BAD02A13D8AB2F585127 /* Pods-Tests-acknowledgements.plist */,
+				A71C67D7593DB0317D5BF2BB /* Pods-Tests-dummy.m */,
+				9531A9562448148AE6D07475 /* Pods-Tests-environment.h */,
+				D87C3E597A31FC218F982BB9 /* Pods-Tests-resources.sh */,
+				365565109B96575625F6FB5F /* Pods-Tests.debug.xcconfig */,
+				6D5102870047D7815DD24C9A /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
-		D79F2293D4207C5A963D4C70 /* Targets Support Files */ = {
+		86D4F60C926FA16BDF8CDA34 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CC56E568EEBEA3432A3C0F11 /* Pods-Tests */,
-				3ACE88B4D5E3C0562D17A580 /* Pods-URBNEnvironmentPicker */,
+				947E24E1132EB61920D1528A /* URBNEnvironment.h */,
+				D73DCB6B7DECFB822D3CE6C2 /* URBNEnvironment.m */,
+				FEBA0F9D56B006F5B615E3F7 /* URBNEnvironmentController.h */,
+				6BEEBDB2389D0C177693E897 /* URBNEnvironmentController.m */,
+				C94C14650143AE39ECCF9335 /* URBNEnvironmentPicker.h */,
+				51239F957021B1365E56B6DF /* URBNEnvironmentPicker.m */,
+				666C1D1D3E6201B9946C7FE0 /* URBNEnvironmentPickerTableViewController.h */,
+				7FFFA5F904DE2B1BD78DBF10 /* URBNEnvironmentPickerTableViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		89E8C441AB3F12F4DF2A29EF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5918E2DA744E717AF24284BF /* Pods-Tests */,
+				366D3E4E206E9DCD55505B99 /* Pods-URBNEnvironmentPicker */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F189D857B26987C13402FEC7 /* Classes */ = {
+		9E60509A8DBFAFB7EFE94DB0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E61185C0B270DA38709DC8B1 /* URBNEnvironment.h */,
-				0EEA6D4C0E6EEBFE0271B258 /* URBNEnvironment.m */,
-				34DBFABF78D7448D7062D56E /* URBNEnvironmentController.h */,
-				1D7A0CB0058D40FC684F0A21 /* URBNEnvironmentController.m */,
-				1A376712128D35CB6656BE02 /* URBNEnvironmentPicker.h */,
-				9F654C215960A8A230007337 /* URBNEnvironmentPicker.m */,
-				C983FB91D25925E85012463A /* URBNEnvironmentPickerTableViewController.h */,
-				50E4A719B1D6C6C8261C2F35 /* URBNEnvironmentPickerTableViewController.m */,
+				66DD426E2687C2B1B628BC55 /* Foundation.framework */,
 			);
-			path = Classes;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9F5DDB46E5DED0DED9BD3428 = {
+			isa = PBXGroup;
+			children = (
+				2873D4586742EF3914598253 /* Podfile */,
+				4CE3A5149F38987302511503 /* Development Pods */,
+				B6FE397279D0A6EE259C059C /* Frameworks */,
+				F648B89985D4BE3A6C202C65 /* Products */,
+				89E8C441AB3F12F4DF2A29EF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B6FE397279D0A6EE259C059C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E60509A8DBFAFB7EFE94DB0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5A48FC7F8554B87CD237C99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBADBD2589E9D0530C3986 /* Pods-Tests-URBNEnvironmentPicker.xcconfig */,
+				9B6DF31E27491400E99DDA88 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */,
+				BDD3F7DB747556A89A3F3598 /* Pods-Tests-URBNEnvironmentPicker-dummy.m */,
+				88A40911D249CB9C0B169295 /* Pods-Tests-URBNEnvironmentPicker-prefix.pch */,
+				4B26D00B535F6D3FBFEC2D22 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker.xcconfig */,
+				251144400B827C39FFACCBFF /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */,
+				5B64255EEB3835874559F00E /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m */,
+				3D70EFB453702E575B560D88 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-Tests-URBNEnvironmentPicker";
+			sourceTree = "<group>";
+		};
+		F648B89985D4BE3A6C202C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6600861E9736E78F21A457DD /* libPods-Tests.a */,
+				D9E36E56055F466F38712D7E /* libPods-Tests-URBNEnvironmentPicker.a */,
+				67A16F34BBFFCA93A1EC73EF /* libPods-URBNEnvironmentPicker.a */,
+				F52AB749B8EA914599ADCFAE /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		09C3BF9FA5BBD8D44553BE55 /* Headers */ = {
+		47D109225F1A175261599123 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F5745559B506BF0BB06690 /* URBNEnvironment.h in Headers */,
-				85395D6E2C2290F50CF1340E /* URBNEnvironmentController.h in Headers */,
-				E14D843CA91236402CE0931F /* URBNEnvironmentPicker.h in Headers */,
-				0520FA48CB77818AFB546854 /* URBNEnvironmentPickerTableViewController.h in Headers */,
+				1F34728E18F1BD44DF6A4A9F /* URBNEnvironment.h in Headers */,
+				AA1C465C5071293ACC907341 /* URBNEnvironmentController.h in Headers */,
+				977B116FEFED5D5D5FDFBD7C /* URBNEnvironmentPicker.h in Headers */,
+				99E78B51CD120B7560E2236B /* URBNEnvironmentPickerTableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8935B7FC2577D3B40CB2163 /* Headers */ = {
+		B56028E62D418B0126CD85F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01DA022E88F6E1661068536 /* URBNEnvironment.h in Headers */,
-				DE958672CF220CCE5C08E59A /* URBNEnvironmentController.h in Headers */,
-				B124F7DFB7C7F7275F3D45C2 /* URBNEnvironmentPicker.h in Headers */,
-				496A915AF3C02104130721F2 /* URBNEnvironmentPickerTableViewController.h in Headers */,
+				56E0E27184A5A25A82C4414C /* URBNEnvironment.h in Headers */,
+				AECEA043993F7391797EFBB7 /* URBNEnvironmentController.h in Headers */,
+				2A44CA14A7841C4FA80F5953 /* URBNEnvironmentPicker.h in Headers */,
+				177E07936E934D544C45C637 /* URBNEnvironmentPickerTableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		332796AA12D44577026A1DB4 /* Pods-Tests-URBNEnvironmentPicker */ = {
+		0A8E45B01A5FA47FCFEE6ADB /* Pods-URBNEnvironmentPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9799B2E6295B393F368EE45 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNEnvironmentPicker" */;
+			buildConfigurationList = 332ED813C56F171E6C8F6314 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker" */;
 			buildPhases = (
-				D8C0568FF314DDC6BF64E2A9 /* Sources */,
-				665FF3344E96D5373CA73C73 /* Frameworks */,
-				C8935B7FC2577D3B40CB2163 /* Headers */,
+				35DBF34E427FA0955827B88F /* Sources */,
+				A42A7DFE5FCFD84DECACACF2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0CE5F1F0E18BA41B740DDC86 /* PBXTargetDependency */,
 			);
-			name = "Pods-Tests-URBNEnvironmentPicker";
-			productName = "Pods-Tests-URBNEnvironmentPicker";
-			productReference = A91CA82054974505CB96F6C2 /* libPods-Tests-URBNEnvironmentPicker.a */;
+			name = "Pods-URBNEnvironmentPicker";
+			productName = "Pods-URBNEnvironmentPicker";
+			productReference = 67A16F34BBFFCA93A1EC73EF /* libPods-URBNEnvironmentPicker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		51D8FD1F1AB3360F75385D49 /* Pods-Tests */ = {
+		4B2B992FD152E08B7DFD252D /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 210517F4015FBF3649AEF323 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildConfigurationList = 4BB301600A2B6311AB43C269 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker" */;
 			buildPhases = (
-				E80CBE555407D2EEEBC78EF9 /* Sources */,
-				518775D8F97A0D89F8792FB4 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3D73403CE944425003FCB53 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests";
-			productName = "Pods-Tests";
-			productReference = 2CC6C1CA596A9F955A4FDB4E /* libPods-Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D3DDD87744930B6E46E0B161 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C757669C9ACA29FB11AAD447 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker" */;
-			buildPhases = (
-				B2DF94529E7712DF3C958AFD /* Sources */,
-				BDEBCE17C546BD79FD301F30 /* Frameworks */,
-				09C3BF9FA5BBD8D44553BE55 /* Headers */,
+				DD1A99D805046FB53A607E10 /* Sources */,
+				9D9BB2A78167EA079A9D7F4D /* Frameworks */,
+				B56028E62D418B0126CD85F1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -335,116 +318,133 @@
 			);
 			name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker";
 			productName = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker";
-			productReference = 3256A027B44EAF3C72C477AD /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */;
+			productReference = F52AB749B8EA914599ADCFAE /* libPods-URBNEnvironmentPicker-URBNEnvironmentPicker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F68C08D6C8931EDD73A281D0 /* Pods-URBNEnvironmentPicker */ = {
+		6C7384890F526875AA230D75 /* Pods-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A197165454DB7B5E92BB572 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker" */;
+			buildConfigurationList = 4D539590DD75FAEBC5ABEDBB /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
 			buildPhases = (
-				A92380EC82490BF568780CD2 /* Sources */,
-				F73E8E5E626CF60644811570 /* Frameworks */,
+				F131C56A002F443ADACC94EC /* Sources */,
+				7E4B8131D955248E236E4395 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA360AFE12DA1282CC39DC83 /* PBXTargetDependency */,
+				56C5E61E4BFC934618673E4A /* PBXTargetDependency */,
 			);
-			name = "Pods-URBNEnvironmentPicker";
-			productName = "Pods-URBNEnvironmentPicker";
-			productReference = 966E1304F892B0C97F770854 /* libPods-URBNEnvironmentPicker.a */;
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 6600861E9736E78F21A457DD /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		98FE7AF769A592E78703869B /* Pods-Tests-URBNEnvironmentPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21758FC2B6617BD282BFED60 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNEnvironmentPicker" */;
+			buildPhases = (
+				01E8DEF97974F22414951493 /* Sources */,
+				EE53E0C1CF15D6B717189EA7 /* Frameworks */,
+				47D109225F1A175261599123 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-URBNEnvironmentPicker";
+			productName = "Pods-Tests-URBNEnvironmentPicker";
+			productReference = D9E36E56055F466F38712D7E /* libPods-Tests-URBNEnvironmentPicker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		45B5FFFF8D821C7C8EAD8D43 /* Project object */ = {
+		DEF13BB63AD05380FDB4BDA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 166AF95F24414F0589950F13 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F0732088FC23AD6287047FD9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 75E9ED2B850B3DC0A1BF18F0;
-			productRefGroup = 840E92BA436BFCB1AF6AC29D /* Products */;
+			mainGroup = 9F5DDB46E5DED0DED9BD3428;
+			productRefGroup = F648B89985D4BE3A6C202C65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51D8FD1F1AB3360F75385D49 /* Pods-Tests */,
-				332796AA12D44577026A1DB4 /* Pods-Tests-URBNEnvironmentPicker */,
-				F68C08D6C8931EDD73A281D0 /* Pods-URBNEnvironmentPicker */,
-				D3DDD87744930B6E46E0B161 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */,
+				6C7384890F526875AA230D75 /* Pods-Tests */,
+				98FE7AF769A592E78703869B /* Pods-Tests-URBNEnvironmentPicker */,
+				0A8E45B01A5FA47FCFEE6ADB /* Pods-URBNEnvironmentPicker */,
+				4B2B992FD152E08B7DFD252D /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A92380EC82490BF568780CD2 /* Sources */ = {
+		01E8DEF97974F22414951493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E273A821557C28B218CCA394 /* Pods-URBNEnvironmentPicker-dummy.m in Sources */,
+				4462713A14D6D2B4678E6B1C /* Pods-Tests-URBNEnvironmentPicker-dummy.m in Sources */,
+				AF4AEDAC30C1676E1D2E0BD1 /* URBNEnvironment.m in Sources */,
+				8FF4EFC30C13892E753E2CBB /* URBNEnvironmentController.m in Sources */,
+				761491502CC23BCB5A2CFFD3 /* URBNEnvironmentPicker.m in Sources */,
+				47B738B8B30F53AF0663F7BF /* URBNEnvironmentPickerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2DF94529E7712DF3C958AFD /* Sources */ = {
+		35DBF34E427FA0955827B88F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C41462066FF3F2A2343F00 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m in Sources */,
-				546DFE9FD9EA2FEF76C41094 /* URBNEnvironment.m in Sources */,
-				C0932DDA30904D1568C29CD7 /* URBNEnvironmentController.m in Sources */,
-				2DA188D9D0A9A0DC593D07BE /* URBNEnvironmentPicker.m in Sources */,
-				467E9189B8FD7E3C6FCD6066 /* URBNEnvironmentPickerTableViewController.m in Sources */,
+				CCDDB5EA52F8AC9271EF7121 /* Pods-URBNEnvironmentPicker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8C0568FF314DDC6BF64E2A9 /* Sources */ = {
+		DD1A99D805046FB53A607E10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E6E37C24A0C4C12580AF20F /* Pods-Tests-URBNEnvironmentPicker-dummy.m in Sources */,
-				D5F25B39A95FE02B2A0609E7 /* URBNEnvironment.m in Sources */,
-				763B6E8C86FB9914ED3CA772 /* URBNEnvironmentController.m in Sources */,
-				5477352F838C07A09BDCBAA6 /* URBNEnvironmentPicker.m in Sources */,
-				9AEE86AE12D0B1867BC95127 /* URBNEnvironmentPickerTableViewController.m in Sources */,
+				3D0D3157590E172C51B4101A /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-dummy.m in Sources */,
+				A17592DD835F6C8C94122B40 /* URBNEnvironment.m in Sources */,
+				16174A3CC14CECDBE6015A62 /* URBNEnvironmentController.m in Sources */,
+				F36D5EFBDAD41F1EBFE8A206 /* URBNEnvironmentPicker.m in Sources */,
+				F36464B872A10E2D5F1FE7C2 /* URBNEnvironmentPickerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E80CBE555407D2EEEBC78EF9 /* Sources */ = {
+		F131C56A002F443ADACC94EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7169F95B22E6C5523D44C588 /* Pods-Tests-dummy.m in Sources */,
+				611E47ED4985EB4022317722 /* Pods-Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA360AFE12DA1282CC39DC83 /* PBXTargetDependency */ = {
+		0CE5F1F0E18BA41B740DDC86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker";
-			target = D3DDD87744930B6E46E0B161 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */;
-			targetProxy = 36EA8CC38EEA7CE38610C171 /* PBXContainerItemProxy */;
+			target = 4B2B992FD152E08B7DFD252D /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker */;
+			targetProxy = 59D952F00A6F06A01E4D836E /* PBXContainerItemProxy */;
 		};
-		C3D73403CE944425003FCB53 /* PBXTargetDependency */ = {
+		56C5E61E4BFC934618673E4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Tests-URBNEnvironmentPicker";
-			target = 332796AA12D44577026A1DB4 /* Pods-Tests-URBNEnvironmentPicker */;
-			targetProxy = F0497F053FE00F4CC2B7EBBD /* PBXContainerItemProxy */;
+			target = 98FE7AF769A592E78703869B /* Pods-Tests-URBNEnvironmentPicker */;
+			targetProxy = 8E72704C598B419A6CABF228 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07F2F829851A9199BB631E60 /* Debug */ = {
+		0D713EC737D17E1A54C4E052 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C98CAF39EFEE7CC7E0964AC8 /* Pods-URBNEnvironmentPicker.debug.xcconfig */;
+			baseConfigurationReference = 95DFFF4FA6C9CC6614AF4B83 /* Pods-URBNEnvironmentPicker.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -458,55 +458,7 @@
 			};
 			name = Debug;
 		};
-		219994E256E4055C3784C52F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 857BC6FD684EE5250265B167 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3EFFF119CA9A95CEF16D5C70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83DDD380D00CE342AF3DA4B2 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNEnvironmentPicker/Pods-Tests-URBNEnvironmentPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		50ECEDB59E641BABAC0523B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83DDD380D00CE342AF3DA4B2 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNEnvironmentPicker/Pods-Tests-URBNEnvironmentPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		84CA174220D0AE8FF8816CAC /* Release */ = {
+		151FAB4693EC731E28E8FCBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -540,39 +492,39 @@
 			};
 			name = Release;
 		};
-		9FE20ADBE9F279F175D78E65 /* Release */ = {
+		1934AB591D5EB54EFF1E2D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B1FD2FD9CFE822EA7C6C653 /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 251144400B827C39FFACCBFF /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A4E2BF0F1EF09F4791112FDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 759FB9EE7EA9DE20F1B9C39B /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		E6B750AFD2AAF248103020CB /* Debug */ = {
+		37C802CC1C321FD3413A01C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6DF31E27491400E99DDA88 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNEnvironmentPicker/Pods-Tests-URBNEnvironmentPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F7F42BDFFE57CD85A6FE932 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -611,12 +563,60 @@
 			};
 			name = Debug;
 		};
-		F33BF0D579B5AF951F7780D8 /* Debug */ = {
+		758402C922095C6D0C0F1F8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 857BC6FD684EE5250265B167 /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */;
+			baseConfigurationReference = 251144400B827C39FFACCBFF /* Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-URBNEnvironmentPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7BD25EE3046A33C7C94DDC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365565109B96575625F6FB5F /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A58A2210B021BB57E3872BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17B707FE17E55DC59AF0386 /* Pods-URBNEnvironmentPicker.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A922A1C079C37B886DA42AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6DF31E27491400E99DDA88 /* Pods-Tests-URBNEnvironmentPicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-URBNEnvironmentPicker/Pods-Tests-URBNEnvironmentPicker-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -627,9 +627,9 @@
 			};
 			name = Debug;
 		};
-		F7A44015B4725C26D9552674 /* Release */ = {
+		B1AD03D3E11CF9349AA6EAA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 597CCEC756493AE5FFC499BD /* Pods-URBNEnvironmentPicker.release.xcconfig */;
+			baseConfigurationReference = 6D5102870047D7815DD24C9A /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -646,52 +646,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		166AF95F24414F0589950F13 /* Build configuration list for PBXProject "Pods" */ = {
+		21758FC2B6617BD282BFED60 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNEnvironmentPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6B750AFD2AAF248103020CB /* Debug */,
-				84CA174220D0AE8FF8816CAC /* Release */,
+				A922A1C079C37B886DA42AF9 /* Debug */,
+				37C802CC1C321FD3413A01C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		210517F4015FBF3649AEF323 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		332ED813C56F171E6C8F6314 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4E2BF0F1EF09F4791112FDF /* Debug */,
-				9FE20ADBE9F279F175D78E65 /* Release */,
+				0D713EC737D17E1A54C4E052 /* Debug */,
+				A58A2210B021BB57E3872BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A197165454DB7B5E92BB572 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker" */ = {
+		4BB301600A2B6311AB43C269 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07F2F829851A9199BB631E60 /* Debug */,
-				F7A44015B4725C26D9552674 /* Release */,
+				1934AB591D5EB54EFF1E2D14 /* Debug */,
+				758402C922095C6D0C0F1F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C757669C9ACA29FB11AAD447 /* Build configuration list for PBXNativeTarget "Pods-URBNEnvironmentPicker-URBNEnvironmentPicker" */ = {
+		4D539590DD75FAEBC5ABEDBB /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F33BF0D579B5AF951F7780D8 /* Debug */,
-				219994E256E4055C3784C52F /* Release */,
+				7BD25EE3046A33C7C94DDC90 /* Debug */,
+				B1AD03D3E11CF9349AA6EAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9799B2E6295B393F368EE45 /* Build configuration list for PBXNativeTarget "Pods-Tests-URBNEnvironmentPicker" */ = {
+		F0732088FC23AD6287047FD9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EFFF119CA9A95CEF16D5C70 /* Debug */,
-				50ECEDB59E641BABAC0523B4 /* Release */,
+				5F7F42BDFFE57CD85A6FE932 /* Debug */,
+				151FAB4693EC731E28E8FCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 45B5FFFF8D821C7C8EAD8D43 /* Project object */;
+	rootObject = DEF13BB63AD05380FDB4BDA0 /* Project object */;
 }
