@@ -1,3 +1,8 @@
+[![CI Status](http://img.shields.io/travis/urbn/URBNEnvironmentPicker.svg?style=flat)](https://travis-ci.org/urbn/URBNEnvironmentPicker)
+[![Version](https://img.shields.io/cocoapods/v/URBNEnvironmentPicker.svg?style=flat)](http://cocoadocs.org/docsets/URBNEnvironmentPicker)
+[![License](https://img.shields.io/cocoapods/l/URBNEnvironmentPicker.svg?style=flat)](http://cocoadocs.org/docsets/URBNEnvironmentPicker)
+[![Platform](https://img.shields.io/cocoapods/p/URBNEnvironmentPicker.svg?style=flat)](http://cocoadocs.org/docsets/URBNEnvironmentPicker)
+
 URBNEnvironmentPicker
 =====================
 
@@ -19,4 +24,4 @@ The environment picker is driven by a that plist you include in your app named `
 
 Add this to your Podfile:
 
-`pod 'URBNEnvironmentPicker', :git => 'git@github.com:urbn/URBNEnvironmentPicker.git'`
+`pod 'URBNEnvironmentPicker'`
