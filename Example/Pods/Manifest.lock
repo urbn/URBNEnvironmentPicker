@@ -1,0 +1,14 @@
+PODS:
+  - URBNEnvironmentPicker (0.2.1)
+
+DEPENDENCIES:
+  - URBNEnvironmentPicker (from `../`)
+
+EXTERNAL SOURCES:
+  URBNEnvironmentPicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  URBNEnvironmentPicker: 36a1a62986f73167ee0772015442a6729d1d9317
+
+COCOAPODS: 0.36.1
