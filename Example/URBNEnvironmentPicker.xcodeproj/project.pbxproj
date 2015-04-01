@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A056B748BC533610D6617B0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2390795390A1571C2A03F8 /* libPods-Tests.a */; };
 		30AB4CF88A4D1A9CB6431DCA /* libPods-URBNEnvironmentPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B7BC0677CB80518616B399 /* libPods-URBNEnvironmentPicker.a */; };
+		45D080511ACB6DBB00D5F02B /* URBNEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D080501ACB6DBA00D5F02B /* URBNEnvironmentTests.m */; };
 		4685E7731AA55FB90025F09B /* URBNEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4685E7721AA55FB90025F09B /* URBNEnvironments.plist */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -23,7 +24,6 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0A6B280218A76130604F0AB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		45D080501ACB6DBA00D5F02B /* URBNEnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentTests.m; sourceTree = "<group>"; };
 		4685E7721AA55FB90025F09B /* URBNEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URBNEnvironments.plist; sourceTree = "<group>"; };
 		5D50C87080883BC73DE96F50 /* URBNEnvironmentPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URBNEnvironmentPicker.podspec; path = ../URBNEnvironmentPicker.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* URBNEnvironmentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNEnvironmentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +59,6 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7CDC6CDDD064C50D449BBA7E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AE0B7B33A944BCDBB9539E53 /* Pods-URBNEnvironmentPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				45D080501ACB6DBA00D5F02B /* URBNEnvironmentTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				45D080511ACB6DBB00D5F02B /* URBNEnvironmentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
