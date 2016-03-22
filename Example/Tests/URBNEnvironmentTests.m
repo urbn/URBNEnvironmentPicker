@@ -62,4 +62,23 @@
     XCTAssert([e.displayDescription isEqualToString:@"Uses dev.sample.com"]);
 }
 
+- (void)testProperReturnValues {
+    URBNEnvironment *dev = self.ec.availableEnvironments.firstObject;
+    XCTAssertEqualObjects([dev URLForKey:@"URL"], [NSURL URLWithString:@"http://dev.sample.com"]);
+    XCTAssertEqualObjects([dev stringForKey:@"AnalyticsAPIKey"], @"8675309");
+    XCTAssertEqualObjects([dev stringForKey:@"BackgroundColor"], @"blue");
+    XCTAssertEqual([dev integerForKey:@"numberValue"], 10);
+    XCTAssertNil([dev stringForKey:@"numberValue"]);
+    XCTAssertNil([dev URLForKey:@"numberValue"]);
+
+    URBNEnvironment *prod = self.ec.availableEnvironments[1];
+    XCTAssertEqualObjects([prod URLForKey:@"URL"], [NSURL URLWithString:@"http://www.sample.com"]);
+    XCTAssertEqualObjects([prod stringForKey:@"AnalyticsAPIKey"], @"9091");
+    XCTAssertEqualObjects([prod stringForKey:@"BackgroundColor"], @"yellow");
+    XCTAssertEqual([prod integerForKey:@"numberValue"], 0);
+    XCTAssertNil([prod objectForKey:@"numberValue"]);
+    XCTAssertNil([prod stringForKey:@"numberValue"]);
+    XCTAssertNil([prod URLForKey:@"numberValue"]);
+}
+
 @end

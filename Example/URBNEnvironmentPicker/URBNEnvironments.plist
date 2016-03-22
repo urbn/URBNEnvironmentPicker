@@ -17,6 +17,8 @@
 			<string>8675309</string>
 			<key>BackgroundColor</key>
 			<string>blue</string>
+			<key>numberValue</key>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<dict>

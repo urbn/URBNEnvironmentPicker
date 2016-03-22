@@ -42,17 +42,25 @@ static NSString *const URBNEnvironmentSettingsKey = @"settings";
 }
 
 - (NSString *)stringForKey:(NSString *)key {
-    return [self objectForKey:key];
+    id string = [self objectForKey:key];
+    
+    if ([string isKindOfClass:[NSString class]]) {
+        return string;
+    }
+    else {
+        return nil;
+    }
 }
 
 - (NSURL *)URLForKey:(NSString *)key {
-    NSString *string = [self objectForKey:key];
-
+    NSString *string = [self stringForKey:key];
+    
     if (!string) {
         return nil;
     }
-
-    return [NSURL URLWithString:string];
+    else {
+        return [NSURL URLWithString:string];
+    }
 }
 
 - (NSInteger)integerForKey:(NSString *)key {
