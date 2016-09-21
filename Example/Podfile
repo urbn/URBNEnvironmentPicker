@@ -4,4 +4,7 @@ use_frameworks!
 
 target 'URBNEnvironmentPicker' do
   pod 'URBNEnvironmentPicker', :path => '../'  
+  target 'Tests' do
+    inherit! :search_paths
+  end 
 end
