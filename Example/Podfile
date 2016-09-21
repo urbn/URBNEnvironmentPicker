@@ -1,11 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
 
-target 'URBNEnvironmentPicker', :exclusive => true do
-  pod "URBNEnvironmentPicker", :path => "../"
-end
-
-target 'Tests', :exclusive => true do
-  pod "URBNEnvironmentPicker", :path => "../"
-
-  
+target 'URBNEnvironmentPicker' do
+  pod 'URBNEnvironmentPicker', :path => '../'  
+  target 'Tests' do
+    inherit! :search_paths
+  end 
 end

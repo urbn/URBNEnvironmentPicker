@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A056B748BC533610D6617B0 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2390795390A1571C2A03F8 /* libPods-Tests.a */; };
-		30AB4CF88A4D1A9CB6431DCA /* libPods-URBNEnvironmentPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B7BC0677CB80518616B399 /* libPods-URBNEnvironmentPicker.a */; };
+		2A948815DD14503F6300F421 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A0D3A4CF46AE32729DD1F /* Pods_Tests.framework */; };
 		45D080511ACB6DBB00D5F02B /* URBNEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D080501ACB6DBA00D5F02B /* URBNEnvironmentTests.m */; };
 		4685E7731AA55FB90025F09B /* URBNEnvironments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4685E7721AA55FB90025F09B /* URBNEnvironments.plist */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +23,7 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		FC479FC903D0055C89C99781 /* Pods_URBNEnvironmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB0A4A38DDC00DF0CB936FD /* Pods_URBNEnvironmentPicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0A6B280218A76130604F0AB7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3EB0A4A38DDC00DF0CB936FD /* Pods_URBNEnvironmentPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URBNEnvironmentPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D080501ACB6DBA00D5F02B /* URBNEnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNEnvironmentTests.m; sourceTree = "<group>"; };
+		4623181FB4A0BAB14623E3C0 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4685E7721AA55FB90025F09B /* URBNEnvironments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = URBNEnvironments.plist; sourceTree = "<group>"; };
 		5D50C87080883BC73DE96F50 /* URBNEnvironmentPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URBNEnvironmentPicker.podspec; path = ../URBNEnvironmentPicker.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* URBNEnvironmentPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNEnvironmentPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,13 +62,11 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		61728A2CA8E8BB41EA1586D4 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7CDC6CDDD064C50D449BBA7E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		882A0D3A4CF46AE32729DD1F /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0B7B33A944BCDBB9539E53 /* Pods-URBNEnvironmentPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker.debug.xcconfig"; sourceTree = "<group>"; };
-		B4742CD24FB6CD1B8DF7466A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E8BCA726672C58B7AED47DD1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F5B7BC0677CB80518616B399 /* libPods-URBNEnvironmentPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNEnvironmentPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67050AAC24CB4B2C04D8837 /* Pods-URBNEnvironmentPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNEnvironmentPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker.release.xcconfig"; sourceTree = "<group>"; };
-		FA2390795390A1571C2A03F8 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				30AB4CF88A4D1A9CB6431DCA /* libPods-URBNEnvironmentPicker.a in Frameworks */,
+				FC479FC903D0055C89C99781 /* Pods_URBNEnvironmentPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				0A056B748BC533610D6617B0 /* libPods-Tests.a in Frameworks */,
+				2A948815DD14503F6300F421 /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +98,10 @@
 		36F2604C0A85E2706CB22F6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E8BCA726672C58B7AED47DD1 /* Pods-Tests.debug.xcconfig */,
-				B4742CD24FB6CD1B8DF7466A /* Pods-Tests.release.xcconfig */,
 				AE0B7B33A944BCDBB9539E53 /* Pods-URBNEnvironmentPicker.debug.xcconfig */,
 				F67050AAC24CB4B2C04D8837 /* Pods-URBNEnvironmentPicker.release.xcconfig */,
+				4623181FB4A0BAB14623E3C0 /* Pods-Tests.debug.xcconfig */,
+				61728A2CA8E8BB41EA1586D4 /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				FA2390795390A1571C2A03F8 /* libPods-Tests.a */,
-				F5B7BC0677CB80518616B399 /* libPods-URBNEnvironmentPicker.a */,
+				3EB0A4A38DDC00DF0CB936FD /* Pods_URBNEnvironmentPicker.framework */,
+				882A0D3A4CF46AE32729DD1F /* Pods_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,11 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "URBNEnvironmentPicker" */;
 			buildPhases = (
-				CF9295FA23D0CCCD87F09BE2 /* Check Pods Manifest.lock */,
+				CF9295FA23D0CCCD87F09BE2 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				6850DB08D6C3AF03438BBC08 /* Copy Pods Resources */,
+				6850DB08D6C3AF03438BBC08 /* [CP] Copy Pods Resources */,
+				A8C433644C10CD31C7539D5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,11 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				B100F03B72C8B228197FB5BD /* Check Pods Manifest.lock */,
+				E93174A1D6E25EBC06540A88 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				51EA5DC008726984B3EF6B23 /* Copy Pods Resources */,
+				AE9FCD7A77023B9FFF3BE8C2 /* [CP] Embed Pods Frameworks */,
+				C296BC1BF5963F2A98D16954 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,29 +304,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		51EA5DC008726984B3EF6B23 /* Copy Pods Resources */ = {
+		6850DB08D6C3AF03438BBC08 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6850DB08D6C3AF03438BBC08 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,14 +319,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B100F03B72C8B228197FB5BD /* Check Pods Manifest.lock */ = {
+		A8C433644C10CD31C7539D5E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNEnvironmentPicker/Pods-URBNEnvironmentPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE9FCD7A77023B9FFF3BE8C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C296BC1BF5963F2A98D16954 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9295FA23D0CCCD87F09BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,14 +379,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CF9295FA23D0CCCD87F09BE2 /* Check Pods Manifest.lock */ = {
+		E93174A1D6E25EBC06540A88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -502,6 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URBNEnvironmentPicker/URBNEnvironmentPicker-Prefix.pch";
 				INFOPLIST_FILE = "URBNEnvironmentPicker/URBNEnvironmentPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -517,6 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URBNEnvironmentPicker/URBNEnvironmentPicker-Prefix.pch";
 				INFOPLIST_FILE = "URBNEnvironmentPicker/URBNEnvironmentPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -525,7 +559,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8BCA726672C58B7AED47DD1 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 4623181FB4A0BAB14623E3C0 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNEnvironmentPicker.app/URBNEnvironmentPicker";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,7 +582,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4742CD24FB6CD1B8DF7466A /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 61728A2CA8E8BB41EA1586D4 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNEnvironmentPicker.app/URBNEnvironmentPicker";
 				FRAMEWORK_SEARCH_PATHS = (

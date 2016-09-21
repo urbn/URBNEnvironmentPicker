@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class URBNEnvironment;
 
 extern NSString *const URBNEnvironmentWillChangeNotification;
@@ -28,7 +30,7 @@ extern NSString *const URBNEnvironmentChangeNewEnvironmentKey;
 /**
  *  Get a list of all environments (URBNEnvironment) loaded from the plist (in the same order)
  */
-@property (nonatomic, strong, readonly) NSArray *availableEnvironments;
+@property (nonatomic, strong, readonly) NSArray <URBNEnvironment *> *availableEnvironments;
 
 /**
  *  The current environment of the app.
@@ -68,3 +70,5 @@ extern NSString *const URBNEnvironmentChangeNewEnvironmentKey;
 - (void)changeToEnvironment:(URBNEnvironment *)newEnvironment;
 
 @end
+
+NS_ASSUME_NONNULL_END
