@@ -1,6 +1,0 @@
-framework module Pods_URBNEnvironmentPicker {
-  umbrella header "Pods-URBNEnvironmentPicker-umbrella.h"
-
-  export *
-  module * { export * }
-}

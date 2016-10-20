@@ -1,6 +1,0 @@
-framework module URBNEnvironmentPicker {
-  umbrella header "URBNEnvironmentPicker-umbrella.h"
-
-  export *
-  module * { export * }
-}
